@@ -59,8 +59,8 @@ h1,h2,h3,.font-head{font-family:'Plus Jakarta Sans',sans-serif}
     <h1 class="font-head font-bold text-4xl md:text-6xl leading-[1.08] max-w-4xl" data-i18n="headline"></h1>
     <p class="mt-6 text-lg text-slate2 max-w-2xl leading-relaxed" data-i18n="summary"></p>
     <div class="mt-9 flex flex-wrap gap-3">
-      <a id="cvLink" href="#" download class="inline-flex items-center gap-2 bg-forest text-white font-semibold text-sm rounded-lg px-5 py-3 hover:bg-[#233b32]">
-        <i data-lucide="download" class="w-4 h-4"></i><span data-i18n="cta_cv"></span>
+      <a id="cvLink" href="assets/CV_FAJAR_EN.pdf" download="CV_Muhammad_Fajar_Ananda_Putra_EN.pdf" class="inline-flex items-center gap-2 bg-forest text-white font-semibold text-sm rounded-lg px-5 py-3 hover:bg-[#233b32]">
+    <i data-lucide="download" class="w-4 h-4"></i><span data-i18n="cta_cv"></span>
       </a>
       <a data-link="email" href="#contact" class="inline-flex items-center gap-2 bg-white border border-sand font-semibold text-sm rounded-lg px-5 py-3 hover:border-forest">
         <i data-lucide="mail" class="w-4 h-4"></i><span data-i18n="cta_contact"></span>
@@ -84,7 +84,7 @@ h1,h2,h3,.font-head{font-family:'Plus Jakarta Sans',sans-serif}
     <p class="mt-2 text-slate2 max-w-2xl" data-i18n="cases_p"></p>
     <div class="mt-8 grid md:grid-cols-2 gap-6">
       <article class="card overflow-hidden flex flex-col">
-        <img src="assets/Tally_Dashboard.png" alt="Tally operations dashboard preview" loading="lazy" class="w-full aspect-[16/9] object-cover bg-sand border-b border-sand">
+        <img src="assets/Tally_Dashboard.png" alt="Tally operations dashboard preview" loading="lazy" class="w-full aspect-[16/9] object-cover bg-sand border-b border-sand cursor-pointer hover:opacity-95 transition" onclick="openModal('assets/Tally_Dashboard.png', 'Tally Operations Dashboard - Full View')">
         <div class="p-6 flex flex-col flex-1">
           <h3 class="font-head font-bold text-xl" data-i18n="c1_t"></h3>
           <p class="mt-2 text-sm text-slate2 leading-relaxed flex-1" data-i18n="c1_s"></p>
@@ -92,7 +92,7 @@ h1,h2,h3,.font-head{font-family:'Plus Jakarta Sans',sans-serif}
         </div>
       </article>
       <article class="card overflow-hidden flex flex-col">
-        <img src="assets/Benih_Tani_Dashboard.png" alt="Benih Tani e-commerce performance chart" loading="lazy" class="w-full aspect-[16/9] object-cover bg-sand border-b border-sand">
+        <img src="assets/Benih_Tani_Dashboard.png" alt="Benih Tani e-commerce performance chart" loading="lazy" class="w-full aspect-[16/9] object-cover bg-sand border-b border-sand cursor-pointer hover:opacity-95 transition" onclick="openModal('assets/Benih_Tani_Dashboard.png', 'Benih Tani E-Commerce Performance - Full View')">
         <div class="p-6 flex flex-col flex-1">
           <h3 class="font-head font-bold text-xl" data-i18n="c2_t"></h3>
           <p class="mt-2 text-sm text-slate2 leading-relaxed flex-1" data-i18n="c2_s"></p>
@@ -374,6 +374,40 @@ let saved = (navigator.language || "").startsWith("id") ? "id" : "en";
 try { saved = localStorage.getItem("lang") || saved; } catch (e) {}
 applyConfig();
 setLang(saved);
+</script>
+  <!-- MODAL LIGHTBOX UNTUK ZOOM GAMBAR -->
+<div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/80 flex items-center justify-center p-4 cursor-pointer" onclick="closeModal()">
+    <div class="relative max-w-5xl w-full bg-white rounded-xl overflow-hidden shadow-2xl p-2" onclick="event.stopPropagation()">
+        <!-- Header Modal -->
+        <div class="flex justify-between items-center px-4 py-2 border-b">
+            <h3 id="modalTitle" class="font-semibold text-gray-800 text-sm md:text-base"></h3>
+            <button onclick="closeModal()" class="text-gray-500 hover:text-black font-bold text-2xl px-2 leading-none">&times;</button>
+        </div>
+        <!-- Konten Gambar Diperbesar -->
+        <div class="p-2 flex justify-center bg-gray-50 max-h-[80vh] overflow-auto">
+            <img id="modalImage" src="" alt="Zoomed view" class="max-w-full h-auto object-contain rounded">
+        </div>
+    </div>
+</div>
+
+<!-- SKRIP JAVASCRIPT -->
+<script>
+    function openModal(imageSrc, titleText) {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('modalTitle');
+        
+        modalImg.src = imageSrc;
+        modalTitle.textContent = titleText;
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('imageModal');
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }
 </script>
 </body>
 </html>
