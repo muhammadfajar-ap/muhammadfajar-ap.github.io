@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Fajar Ananda Putra | Supply Chain &amp; Logistics Operations</title>
+<meta name="description" content="Portfolio of Muhammad Fajar Ananda Putra: seaport cargo control, tally operations and Excel reporting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { cream:'#FAF8F5', ink:'#1E1E1E', slate2:'#525252', sand:'#E5E0D8', forest:'#2C4A3E' },
+  fontFamily: { head:['"Plus Jakarta Sans"','sans-serif'], body:['Inter','sans-serif'] }
+}}};
+</script>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{font-family:Inter,sans-serif;background:#FAF8F5;color:#1E1E1E}
+h1,h2,h3,.font-head{font-family:'Plus Jakarta Sans',sans-serif}
+:focus-visible{outline:2px solid #2C4A3E;outline-offset:3px;border-radius:6px}
+.card{background:#fff;border:1px solid #E5E0D8;border-radius:14px}
+.pill-thumb{transition:transform .2s ease}
+#modal[hidden]{display:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pill-thumb{transition:none}}
+</style>
+</head>
+<body class="antialiased">
+
+<header class="sticky top-0 z-40 bg-cream/90 backdrop-blur border-b border-sand">
+  <nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-4" aria-label="Main">
+    <a href="#top" class="flex items-center gap-3 shrink-0">
+      <span class="font-head font-bold text-xs tracking-wider bg-forest text-white rounded-md px-2 py-1.5">MFAP</span>
+      <span class="font-head font-semibold text-sm hidden sm:inline">Muhammad Fajar Ananda Putra</span>
+    </a>
+    <div class="hidden md:flex items-center gap-7 text-sm text-slate2">
+      <a class="hover:text-ink" href="#impact" data-i18n="nav_impact"></a>
+      <a class="hover:text-ink" href="#cases" data-i18n="nav_cases"></a>
+      <a class="hover:text-ink" href="#experience" data-i18n="nav_exp"></a>
+      <a class="hover:text-ink" href="#skills" data-i18n="nav_skills"></a>
+      <a class="hover:text-ink" href="#contact" data-i18n="nav_contact"></a>
+    </div>
+    <button id="langToggle" type="button" class="relative flex items-center rounded-full border border-sand bg-white p-0.5 text-xs font-semibold" aria-label="Switch language / Ganti bahasa">
+      <span class="pill-thumb absolute top-0.5 left-0.5 h-[calc(100%-4px)] w-[calc(50%-2px)] rounded-full bg-forest" id="thumb"></span>
+      <span id="lEN" class="relative z-10 px-3 py-1.5 text-white">EN</span>
+      <span id="lID" class="relative z-10 px-3 py-1.5 text-slate2">ID</span>
+    </button>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-5 pt-16 pb-14 md:pt-24 md:pb-20">
+    <div class="mb-8">
+      <p class="font-head font-semibold" data-i18n="role_short"></p>
+      <p class="text-sm text-slate2 flex items-center gap-1.5 mt-1"><i data-lucide="map-pin" class="w-4 h-4"></i>Bandar Lampung, Indonesia</p>
+    </div>
+    <h1 class="font-head font-bold text-4xl md:text-6xl leading-[1.08] max-w-4xl" data-i18n="headline"></h1>
+    <p class="mt-6 text-lg text-slate2 max-w-2xl leading-relaxed" data-i18n="summary"></p>
+    <div class="mt-9 flex flex-wrap gap-3">
+      <a id="cvLink" href="#" download class="inline-flex items-center gap-2 bg-forest text-white font-semibold text-sm rounded-lg px-5 py-3 hover:bg-[#233b32]">
+        <i data-lucide="download" class="w-4 h-4"></i><span data-i18n="cta_cv"></span>
+      </a>
+      <a data-link="email" href="#contact" class="inline-flex items-center gap-2 bg-white border border-sand font-semibold text-sm rounded-lg px-5 py-3 hover:border-forest">
+        <i data-lucide="mail" class="w-4 h-4"></i><span data-i18n="cta_contact"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Metrics -->
+  <section id="impact" class="max-w-6xl mx-auto px-5 pb-16">
+    <div class="card grid grid-cols-2 lg:grid-cols-4 divide-sand lg:divide-x">
+      <div class="p-6 border-b lg:border-b-0 border-sand"><p class="font-head font-bold text-4xl text-forest">60+</p><p class="mt-2 font-semibold text-sm" data-i18n="m1_t"></p><p class="text-sm text-slate2" data-i18n="m1_d"></p></div>
+      <div class="p-6 border-b lg:border-b-0 border-l lg:border-l-0 border-sand"><p class="font-head font-bold text-4xl text-forest">~0.1%</p><p class="mt-2 font-semibold text-sm" data-i18n="m2_t"></p><p class="text-sm text-slate2" data-i18n="m2_d"></p></div>
+      <div class="p-6"><p class="font-head font-bold text-4xl text-forest">785</p><p class="mt-2 font-semibold text-sm" data-i18n="m3_t"></p><p class="text-sm text-slate2" data-i18n="m3_d"></p></div>
+      <div class="p-6 border-l lg:border-l-0 border-sand"><p class="font-head font-bold text-4xl text-forest">3+</p><p class="mt-2 font-semibold text-sm" data-i18n="m4_t"></p><p class="text-sm text-slate2" data-i18n="m4_d"></p></div>
+    </div>
+  </section>
+
+  <!-- Case studies -->
+  <section id="cases" class="max-w-6xl mx-auto px-5 pb-20">
+    <h2 class="font-head font-bold text-3xl" data-i18n="cases_h"></h2>
+    <p class="mt-2 text-slate2 max-w-2xl" data-i18n="cases_p"></p>
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <article class="card overflow-hidden flex flex-col">
+        <img src="assets/tally-dashboard.webp" alt="Tally operations dashboard preview" loading="lazy" class="w-full aspect-[16/9] object-cover bg-sand border-b border-sand">
+        <div class="p-6 flex flex-col flex-1">
+          <h3 class="font-head font-bold text-xl" data-i18n="c1_t"></h3>
+          <p class="mt-2 text-sm text-slate2 leading-relaxed flex-1" data-i18n="c1_s"></p>
+          <button type="button" data-case="c1" class="open-case mt-5 self-start inline-flex items-center gap-2 text-sm font-semibold text-forest hover:underline"><span data-i18n="view_case"></span><i data-lucide="arrow-up-right" class="w-4 h-4"></i></button>
+        </div>
+      </article>
+      <article class="card overflow-hidden flex flex-col">
+        <img src="assets/benih-tani-chart.webp" alt="Benih Tani e-commerce performance chart" loading="lazy" class="w-full aspect-[16/9] object-cover bg-sand border-b border-sand">
+        <div class="p-6 flex flex-col flex-1">
+          <h3 class="font-head font-bold text-xl" data-i18n="c2_t"></h3>
+          <p class="mt-2 text-sm text-slate2 leading-relaxed flex-1" data-i18n="c2_s"></p>
+          <button type="button" data-case="c2" class="open-case mt-5 self-start inline-flex items-center gap-2 text-sm font-semibold text-forest hover:underline"><span data-i18n="view_case"></span><i data-lucide="arrow-up-right" class="w-4 h-4"></i></button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="border-y border-sand bg-white">
+    <div class="max-w-6xl mx-auto px-5 py-20">
+      <h2 class="font-head font-bold text-3xl" data-i18n="exp_h"></h2>
+      <div class="mt-10 grid lg:grid-cols-3 gap-10">
+        <div>
+          <h3 class="font-head font-semibold text-sm text-forest mb-5" data-i18n="grp_pro"></h3>
+          <ol class="border-l border-sand ml-1 space-y-7" id="tl_pro"></ol>
+        </div>
+        <div>
+          <h3 class="font-head font-semibold text-sm text-forest mb-5" data-i18n="grp_biz"></h3>
+          <ol class="border-l border-sand ml-1 space-y-7" id="tl_biz"></ol>
+        </div>
+        <div>
+          <h3 class="font-head font-semibold text-sm text-forest mb-5" data-i18n="grp_edu"></h3>
+          <ol class="border-l border-sand ml-1 space-y-7" id="tl_edu"></ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-6xl mx-auto px-5 py-20">
+    <h2 class="font-head font-bold text-3xl" data-i18n="skills_h"></h2>
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <div class="card p-6">
+        <h3 class="font-head font-bold text-lg" data-i18n="dom_h"></h3>
+        <ul class="mt-4 space-y-3 text-sm" id="domList"></ul>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-head font-bold text-lg" data-i18n="tool_h"></h3>
+        <dl class="mt-4 space-y-4 text-sm" id="toolList"></dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact" class="bg-forest text-white">
+  <div class="max-w-6xl mx-auto px-5 py-14 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+    <div>
+      <h2 class="font-head font-bold text-2xl" data-i18n="contact_h"></h2>
+      <p class="mt-2 text-white/80 text-sm" data-i18n="contact_p"></p>
+    </div>
+    <div class="flex flex-wrap gap-3 self-start">
+      <a data-link="email" href="#contact" class="inline-flex items-center gap-2 bg-white text-forest font-semibold text-sm rounded-lg px-4 py-2.5"><i data-lucide="mail" class="w-4 h-4"></i>Email</a>
+      <a data-link="whatsapp" href="#contact" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white text-forest font-semibold text-sm rounded-lg px-4 py-2.5"><i data-lucide="whatsapp" class="w-4 h-4"></i>WhatsApp</a>
+      <a data-link="linkedin" href="#contact" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white text-forest font-semibold text-sm rounded-lg px-4 py-2.5"><i data-lucide="linkedin" class="w-4 h-4"></i>LinkedIn</a>
+      <a data-link="github" href="#contact" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white text-forest font-semibold text-sm rounded-lg px-4 py-2.5"><i data-lucide="github" class="w-4 h-4"></i>GitHub</a>
+    </div>
+  </div>
+  <div class="border-t border-white/15 text-xs text-white/60 text-center py-4">© 2026 Muhammad Fajar Ananda Putra</div>
+</footer>
+
+<!-- Modal -->
+<div id="modal" hidden class="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div id="backdrop" class="absolute inset-0 bg-ink/50"></div>
+  <div class="relative bg-cream w-full sm:max-w-2xl max-h-[90vh] overflow-y-auto rounded-t-2xl sm:rounded-2xl border border-sand">
+    <div class="sticky top-0 bg-cream flex items-start justify-between gap-4 p-6 pb-4 border-b border-sand">
+      <h3 id="mTitle" class="font-head font-bold text-xl"></h3>
+      <button id="mClose" type="button" class="p-1 rounded-md hover:bg-sand" aria-label="Close"><i data-lucide="x" class="w-5 h-5"></i></button>
+    </div>
+    <div class="p-6 space-y-6 text-sm leading-relaxed" id="mBody"></div>
+  </div>
+</div>
+
+<script>
+/* ====== CONFIG: paste your real URLs here (only place you need to edit) ====== */
+const CONFIG = {
+  email:    "muhammadfajar.ap@gmail.com",
+  whatsapp: "https://wa.me/6285783212344",          // format: https://wa.me/ + number with country code, no + or spaces
+  linkedin: "https://www.linkedin.com/in/muhammadfajar-ap/",
+  github: {
+    profile: "https://github.com/muhammadfajar-ap",
+    c1: "https://github.com/muhammadfajar-ap/tally-dashboard",   // Case study 1 repo
+    c2: "https://github.com/muhammadfajar-ap/benih-tani"         // Case study 2 repo
+  },
+  cv: { en: "assets/CV_Fajar_EN.pdf", id: "assets/CV_Fajar_ID.pdf" }
+};
+
+/* Inline SVG icons: no external icon script needed */
+const ICONS = {
+  "map-pin":'<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>',
+  download:'<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>',
+  mail:'<rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>',
+  "arrow-up-right":'<path d="M7 7h10v10"/><path d="M7 17 17 7"/>',
+  x:'<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+  check:'<path d="M20 6 9 17l-5-5"/>',
+  github:'<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/>',
+  linkedin:'<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>',
+  whatsapp:'<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/>'
+};
+function hydrateIcons() {
+  document.querySelectorAll("i[data-lucide]").forEach(el => {
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("fill", "none");
+    svg.setAttribute("stroke", "currentColor");
+    svg.setAttribute("stroke-width", "2");
+    svg.setAttribute("stroke-linecap", "round");
+    svg.setAttribute("stroke-linejoin", "round");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("class", el.getAttribute("class") || "");
+    svg.innerHTML = ICONS[el.dataset.lucide] || "";
+    el.replaceWith(svg);
+  });
+}
+function applyConfig() {
+  const links = { email: "mailto:" + CONFIG.email, whatsapp: CONFIG.whatsapp, linkedin: CONFIG.linkedin, github: CONFIG.github.profile };
+  document.querySelectorAll("[data-link]").forEach(a => { a.href = links[a.dataset.link]; });
+}
+const translations = {
+  en: {
+    nav_impact:"Impact", nav_cases:"Case studies", nav_exp:"Experience", nav_skills:"Skills", nav_contact:"Contact",
+    role_short:"Supply Chain & Logistics Operations Specialist | Port & Cargo Control",
+    headline:"Cargo discrepancy cut by 90%, with reporting you can audit.",
+    summary:"Logistics operations professional with 3+ years of experience supervising seaport vessel loading/unloading (1,000–6,500 tons per shipment; 60+ vessels) and reconciling cargo against Delivery Orders (DO). Reduced cargo discrepancy by 90% (from ~1% to ~0.1% per DO) through SOP design and automated Excel reporting.",
+    cta_cv:"Download CV", cta_contact:"Contact me",
+    m1_t:"Vessels handled", m1_d:"1,000–6,500 tons per shipment",
+    m2_t:"Cargo discrepancy", m2_d:"Down from ~1% per DO",
+    m3_t:"E-commerce orders", m3_d:"0 refunds, ~2% cancellation",
+    m4_t:"Years in operations", m4_d:"Seaport and warehouse",
+    cases_h:"Case studies", cases_p:"Two projects, each framed as Problem, Action, Result.",
+    view_case:"View case study details",
+    c1_t:"Tally Operations Dashboard",
+    c1_s:"Reducing cargo discrepancy from ~1% to ~0.1% per DO with Excel SUMIF, pivot tables and a new SOP.",
+    c2_t:"Benih Tani E-Commerce Performance",
+    c2_s:"Fulfilling 785 orders over 26 months with 0 refunds and 20–35% seasonal repeat customers.",
+    exp_h:"Experience & education", grp_pro:"Professional experience", grp_biz:"Business experience", grp_edu:"Education",
+    skills_h:"Core competencies & tools", dom_h:"Domain expertise", tool_h:"Technical tools & languages",
+    contact_h:"Let's talk about logistics operations.", contact_p:"Open to supply chain, logistics and operations roles.",
+    prob:"Problem", act:"Action", res:"Result", tools:"Tools used", repo:"View on GitHub",
+    cases:{
+      c1:{ t:"Tally Operations Dashboard",
+        p:"Shipment cargo was reconciled against the Delivery Order (DO) with no consistent tally process. Shrinkage during vessel unloading averaged about 1% per DO. In one example, a DO of 84,000 sacks (2,100 tons) arrived as 83,160 sacks.",
+        a:"Designed a tally SOP and set up a tally team to count each unloading. Consolidated the tally records in Excel, used SUMIF and pivot tables to reconcile counts against each DO, and built a dashboard for reporting to the team.",
+        r:"Cargo discrepancy fell from ~1% to ~0.1% per DO, a 90% reduction, across 60+ vessels handled.",
+        tl:"Microsoft Excel (SUMIF, Pivot Tables, Dashboards), SOP design, GitHub" },
+      c2:{ t:"Benih Tani E-Commerce Performance",
+        p:"Benih Tani sold rice seed online, where demand follows planting seasons and trust depends on reliable delivery. The business needed consistent order fulfilment without refunds.",
+        a:"Ran the online store from May 2021 to Jun 2023: managed listings, orders and customer communication, and tracked order and repeat-customer data across seasons.",
+        r:"785 orders fulfilled over 26 months with 0 refunds, ~2% cancellation and 20–35% seasonal repeat customers.",
+        tl:"Marketplace and social channels, Excel, Canva" }
+    },
+    pro:[
+      ["Tally Clerk","PT. Sungai Budi Group","Jun 2023 – Present","Supervise and count vessel loading/unloading, reconcile cargo against DOs, produce activity reports and coordinate with PBM, expedition and warehouse teams."],
+      ["Warehouse Staff","PT. Torabika Eka Semesta","Apr – Jun 2022","Goods receiving, stocktaking and stock records."],
+      ["Sales Team Lead","Istana Laundry","Jun 2020 – Aug 2021","Led the sales team."]
+    ],
+    biz:[
+      ["Creative Specialist & Lead Photographer","3Miles Photography","Dec 2021 – Jul 2024","Photography and videography business, co-run with a partner."],
+      ["Owner","Benih Tani","May 2021 – Jun 2023","Online agriculture business selling rice seed."]
+    ],
+    edu:[["Bachelor's Degree in Communication Science","Universitas Terbuka","2020 – Expected 2027",""]],
+    dom:[
+      ["Port & Cargo Operations","Vessel loading/unloading supervision, DO reconciliation, tally control"],
+      ["Warehouse & Inventory","Goods receiving, stocktaking, stock records"],
+      ["Process & Reporting","SOP design, activity reports, automated Excel reporting"]
+    ],
+    tool:[
+      ["Tools","Microsoft Excel (SUMIF, Pivot Tables, Dashboards), Google Workspace, Canva, AI Tools"],
+      ["Languages","Indonesian (Native), English (Intermediate – TOEPS 566)"]
+    ]
+  },
+  id: {
+    nav_impact:"Dampak", nav_cases:"Studi kasus", nav_exp:"Pengalaman", nav_skills:"Keahlian", nav_contact:"Kontak",
+    role_short:"Spesialis Operasional Supply Chain & Logistik | Pengendalian Kargo Pelabuhan",
+    headline:"Selisih kargo turun 90%, dengan pelaporan yang bisa diaudit.",
+    summary:"Profesional operasional logistik dengan pengalaman 3+ tahun mengawasi bongkar muat kapal di pelabuhan (1.000–6.500 ton per pengiriman; 60+ kapal) serta merekonsiliasi kargo terhadap Delivery Order (DO). Menekan selisih kargo sebesar 90% (dari ~1% menjadi ~0,1% per DO) melalui perancangan SOP dan pelaporan Excel otomatis.",
+    cta_cv:"Unduh CV", cta_contact:"Hubungi saya",
+    m1_t:"Kapal ditangani", m1_d:"1.000–6.500 ton per pengiriman",
+    m2_t:"Selisih kargo", m2_d:"Turun dari ~1% per DO",
+    m3_t:"Pesanan e-commerce", m3_d:"0 refund, ~2% pembatalan",
+    m4_t:"Tahun di operasional", m4_d:"Pelabuhan dan gudang",
+    cases_h:"Studi kasus", cases_p:"Dua proyek, masing-masing disusun sebagai Masalah, Tindakan, Hasil.",
+    view_case:"Lihat detail studi kasus",
+    c1_t:"Dashboard Operasi Tally",
+    c1_s:"Menurunkan selisih kargo dari ~1% menjadi ~0,1% per DO dengan Excel SUMIF, pivot table, dan SOP baru.",
+    c2_t:"Performa E-Commerce Benih Tani",
+    c2_s:"Memenuhi 785 pesanan selama 26 bulan dengan 0 refund dan 20–35% pelanggan berulang musiman.",
+    exp_h:"Pengalaman & pendidikan", grp_pro:"Pengalaman profesional", grp_biz:"Pengalaman bisnis", grp_edu:"Pendidikan",
+    skills_h:"Kompetensi inti & alat", dom_h:"Keahlian bidang", tool_h:"Alat teknis & bahasa",
+    contact_h:"Mari berdiskusi tentang operasional logistik.", contact_p:"Terbuka untuk posisi supply chain, logistik, dan operasional.",
+    prob:"Masalah", act:"Tindakan", res:"Hasil", tools:"Alat yang digunakan", repo:"Lihat di GitHub",
+    cases:{
+      c1:{ t:"Dashboard Operasi Tally",
+        p:"Kargo kiriman direkonsiliasi terhadap Delivery Order (DO) tanpa proses tally yang konsisten. Penyusutan saat bongkar kapal rata-rata sekitar 1% per DO. Dalam satu contoh, DO 84.000 zak (2.100 ton) hanya diterima 83.160 zak.",
+        a:"Merancang SOP tally dan membentuk tim tally untuk menghitung setiap bongkar muat. Mengonsolidasikan catatan tally di Excel, memakai SUMIF dan pivot table untuk merekonsiliasi hitungan terhadap tiap DO, serta membangun dashboard untuk pelaporan ke tim.",
+        r:"Selisih kargo turun dari ~1% menjadi ~0,1% per DO, penurunan 90%, pada 60+ kapal yang ditangani.",
+        tl:"Microsoft Excel (SUMIF, Pivot Table, Dashboard), perancangan SOP, GitHub" },
+      c2:{ t:"Performa E-Commerce Benih Tani",
+        p:"Benih Tani menjual benih padi secara online, dengan permintaan mengikuti musim tanam dan kepercayaan bergantung pada pengiriman yang andal. Bisnis membutuhkan pemenuhan pesanan yang konsisten tanpa refund.",
+        a:"Menjalankan toko online sejak Mei 2021 hingga Jun 2023: mengelola listing, pesanan, dan komunikasi pelanggan, serta memantau data pesanan dan pelanggan berulang lintas musim.",
+        r:"785 pesanan terpenuhi selama 26 bulan dengan 0 refund, ~2% pembatalan, dan 20–35% pelanggan berulang musiman.",
+        tl:"Marketplace dan kanal media sosial, Excel, Canva" }
+    },
+    pro:[
+      ["Tally Clerk","PT. Sungai Budi Group","Jun 2023 – Sekarang","Mengawasi dan menghitung bongkar muat kapal, merekonsiliasi kargo terhadap DO, membuat laporan aktivitas, dan berkoordinasi dengan tim PBM, ekspedisi, dan gudang."],
+      ["Staf Gudang","PT. Torabika Eka Semesta","Apr – Jun 2022","Penerimaan barang, stock opname, dan pencatatan stok."],
+      ["Sales Team Lead","Istana Laundry","Jun 2020 – Agu 2021","Memimpin tim penjualan."]
+    ],
+    biz:[
+      ["Creative Specialist & Lead Photographer","3Miles Photography","Des 2021 – Jul 2024","Bisnis fotografi dan videografi, dijalankan bersama rekan."],
+      ["Pemilik","Benih Tani","Mei 2021 – Jun 2023","Bisnis pertanian online yang menjual benih padi."]
+    ],
+    edu:[["S1 Ilmu Komunikasi","Universitas Terbuka","2020 – Target lulus 2027",""]],
+    dom:[
+      ["Operasional Pelabuhan & Kargo","Pengawasan bongkar muat kapal, rekonsiliasi DO, pengendalian tally"],
+      ["Gudang & Persediaan","Penerimaan barang, stock opname, pencatatan stok"],
+      ["Proses & Pelaporan","Perancangan SOP, laporan aktivitas, pelaporan Excel otomatis"]
+    ],
+    tool:[
+      ["Alat","Microsoft Excel (SUMIF, Pivot Table, Dashboard), Google Workspace, Canva, AI Tools"],
+      ["Bahasa","Indonesia (Native), Inggris (Menengah – TOEPS 566)"]
+    ]
+  }
+};
+
+let lang = "en";
+const $ = (s) => document.querySelector(s);
+let openCaseId = null;
+
+function timeline(el, items) {
+  el.innerHTML = items.map(i => `
+    <li class="pl-5 relative">
+      <span class="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full bg-forest"></span>
+      <p class="font-head font-semibold">${i[0]}</p>
+      <p class="text-sm text-slate2">${i[1]}</p>
+      <p class="text-xs text-slate2 mt-0.5">${i[2]}</p>
+      ${i[3] ? `<p class="text-sm text-slate2 mt-2 leading-relaxed">${i[3]}</p>` : ""}
+    </li>`).join("");
+}
+
+function renderModal() {
+  if (!openCaseId) return;
+  const t = translations[lang], c = t.cases[openCaseId];
+  $("#mTitle").textContent = c.t;
+  const block = (label, text) => `<div><h4 class="font-head font-semibold text-forest mb-1">${label}</h4><p class="text-slate2">${text}</p></div>`;
+  $("#mBody").innerHTML = block(t.prob, c.p) + block(t.act, c.a) + block(t.res, c.r) + block(t.tools, c.tl) +
+    `<a href="${CONFIG.github[openCaseId]}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-forest text-white font-semibold rounded-lg px-4 py-2.5"><i data-lucide="github" class="w-4 h-4"></i>${t.repo}</a>`;
+  hydrateIcons();
+}
+
+function setLang(l) {
+  lang = l;
+  const t = translations[l];
+  document.documentElement.lang = l;
+  document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t[el.dataset.i18n]; });
+  $("#cvLink").setAttribute("href", CONFIG.cv[l]);
+  $("#thumb").style.transform = l === "en" ? "translateX(0)" : "translateX(100%)";
+  $("#lEN").className = "relative z-10 px-3 py-1.5 " + (l === "en" ? "text-white" : "text-slate2");
+  $("#lID").className = "relative z-10 px-3 py-1.5 " + (l === "id" ? "text-white" : "text-slate2");
+  timeline($("#tl_pro"), t.pro); timeline($("#tl_biz"), t.biz); timeline($("#tl_edu"), t.edu);
+  $("#domList").innerHTML = t.dom.map(d => `<li class="flex gap-3"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-forest shrink-0"></i><span><b class="font-semibold">${d[0]}</b><br><span class="text-slate2">${d[1]}</span></span></li>`).join("");
+  $("#toolList").innerHTML = t.tool.map(d => `<div><dt class="font-semibold">${d[0]}</dt><dd class="text-slate2 mt-0.5">${d[1]}</dd></div>`).join("");
+  try { localStorage.setItem("lang", l); } catch (e) {}
+  renderModal();
+  hydrateIcons();
+}
+
+function openCase(id) { openCaseId = id; $("#modal").hidden = false; document.body.style.overflow = "hidden"; renderModal(); $("#mClose").focus(); }
+function closeCase() { openCaseId = null; $("#modal").hidden = true; document.body.style.overflow = ""; }
+
+document.querySelectorAll(".open-case").forEach(b => b.addEventListener("click", () => openCase(b.dataset.case)));
+$("#mClose").addEventListener("click", closeCase);
+$("#backdrop").addEventListener("click", closeCase);
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeCase(); });
+$("#langToggle").addEventListener("click", () => setLang(lang === "en" ? "id" : "en"));
+
+let saved = (navigator.language || "").startsWith("id") ? "id" : "en";
+try { saved = localStorage.getItem("lang") || saved; } catch (e) {}
+applyConfig();
+setLang(saved);
+</script>
+</body>
+</html>
